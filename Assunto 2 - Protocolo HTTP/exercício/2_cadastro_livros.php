@@ -20,11 +20,19 @@
 
     <hr>
 
-    <?php
+<?php
 
-    // Monte seu código PHP (Aqui)
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    ?>
+    $titulo = $_POST["titulo"];
+    $ano = $_POST["ano"];
+
+    echo "<h2>Livro cadastrado!</h2>";
+    echo "Título: " . $titulo . "<br>";
+    echo "Ano: " . $ano;
+}
+
+?>
 
 </body>
 </html>
